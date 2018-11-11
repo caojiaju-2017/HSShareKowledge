@@ -1,0 +1,30 @@
+ns_account:
+    account_id   number
+    alias        string
+    phone        string
+    email        string
+    regtime      string
+    wechat       string
+
+
+ns_knowleges:
+    account_id   number
+    pri_code     string
+    title        string
+    context      string
+    create_time  string
+    type         string
+    trade_count  int
+
+ns_knowleges--->type(8 bit)===> 前四位为类型（0000表示未定义）， 后四位为业务特性: 111 表示费用  1表示收费  0表示共享
+
+
+ns_knowlege_map_lab:
+    klg_code      string
+    lab_code      string
+
+
+ns_labels:
+    pri_code     string
+    name         string
+    hite_count   string
